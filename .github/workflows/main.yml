@@ -10,9 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: cachix/install-nix-action@v6
-    - run: |
-        cat /etc/nix/nix.conf
-        sudo sh -c echo system-features = nixos-test >> /etc/nix/nix.conf
+    - run: echo system-features = nixos-test >> ~/.config/nix/nix.conf
     - uses: cachix/cachix-action@v3
       with:
         name: 573-ci

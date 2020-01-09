@@ -1,4 +1,4 @@
-# nix-github-integration-tests
+## nix-github-integration-tests
 proof of concept using nixos testing framework in github actions
 
 # Hint for local use
